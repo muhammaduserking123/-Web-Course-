@@ -1,0 +1,71 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Web course</title>
+  
+  </style>
+</head>
+<body>
+
+  <h1>Get Your HTML, CSS and JavaScript Course!</h1>
+
+  <div class="auth-section">
+    <div id="authStatus">Welcome, Guest!</div>
+    <button id="authButton" onclick="toggleAuth()">Sign In</button>
+  </div>
+
+  <table>
+    <tr>
+      <td>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/ok-plXXHlWw?si=oeN0msxSm5i1CqWu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/OEV8gMkCHXQ?si=rUcRQvHkZU8--HDy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/DHjqpvDnNGE?si=cPzAvsCNFMXq48AC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </td>
+    </tr>
+  </table>
+
+  <h1>HTML</h1>
+  <p>Html is a programming language which is used to create a structure of a website. It stands for HYPERTEXT MARKUP LANGUAGE. It was created in 1989 by Tim Berners-Lee.</p>
+  <a href="https://www.w3schools.com/html/default.asp" target="_blank">Learn HTML on W3Schools</a>
+
+  <h1>CSS</h1>
+  <p>CSS is used to create the style of a website. It stands for Cascading Style Sheets. It was created in 1996 by Håkon Wium Lie.</p>
+  <a href="https://www.w3schools.com/css/default.asp" target="_blank">Learn CSS on W3Schools</a>
+
+  <h1>JavaScript</h1>
+  <p>JavaScript is used to create the functions that a website can perform. It was created in 1995 by Brendan Eich.</p>
+  <a href="https://www.w3schools.com/js/default.asp" target="_blank">Learn JavaScript on W3Schools</a>
+
+  <h1>Install VS Code</h1>
+  <p>Visual Studio Code is a popular code editor for web development. Download it using the link below:</p>
+  <a href="https://code.visualstudio.com/" target="_blank">Download Visual Studio Code</a>
+
+  <h1>Install GitHub</h1>
+  <p>GitHub Desktop makes it easy to manage your code repositories on your computer. Download it below:</p>
+  <a href="https://desktop.github.com/" target="_blank">Download GitHub Desktop</a>
+
+  <p>Progrmaing studies.™</p>
+
+  <script>
+    let signedIn = false;
+
+    function toggleAuth() {
+      signedIn = !signedIn;
+      const status = document.getElementById("authStatus");
+      const button = document.getElementById("authButton");
+
+      if (signedIn) {
+        status.textContent = "Welcome!";
+        button.textContent = "Sign Out";
+      } else {
+        status.textContent = "Hey, Guest!";
+        button.textContent = "Sign In";
+      }
+    }
+  </script>
+</body>
+</html>
